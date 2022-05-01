@@ -7,7 +7,12 @@
 	export { className as class };
 </script>
 
-<div class="flex flex-col">
-	<label for={id}>{label}</label>
-	<textarea {id} bind:value class={`p-3 border border-slate-400 rounded ${className}`} />
+<div class="w-full h-full flex flex-col gap-1">
+	<div class="flex items-center justify-between">
+		<label for={id}>{label}</label>
+		<div class="flex items-center">
+			<slot name="toolbar" />
+		</div>
+	</div>
+	<textarea {id} bind:value class={`p-3 border border-neutral-500 rounded ${className}`} />
 </div>

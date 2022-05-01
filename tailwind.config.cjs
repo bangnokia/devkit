@@ -4,9 +4,9 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
-        fontFamily: {
-            mono: ["Roboto Mono", ...defaultTheme.fontFamily.mono]
-        }
+      fontFamily: {
+        mono: ['"Roboto Mono"', ...defaultTheme.fontFamily.mono]
+      }
     },
   },
   plugins: [],
