@@ -14,5 +14,5 @@
 			<slot name="toolbar" />
 		</div>
 	</div>
-	<textarea {id} bind:value class={`p-3 border border-neutral-500 rounded ${className}`} />
+	<textarea {id} bind:value class={`p-3 border border-neutral-500 rounded ${className}`}></textarea>
 </div>
