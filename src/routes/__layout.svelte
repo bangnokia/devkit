@@ -28,7 +28,7 @@
 	<div class="flex flex-wrap w-full h-full items-stretch">
 		<nav class="flex flex-col py-5 px-3 gap-2">
 			{#each navItems as item}
-				<a href={item.slug} class="hover:bg-neutral-300 rounded-md px-2 py-0.5">
+				<a href={item.slug} class="rounded-md px-2 py-1 hover:underline">
 					<JsonIcon class="w-5 h-5 inline" />
 					<span class="inline">{item.name}</span>
 				</a>
