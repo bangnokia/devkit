@@ -1,7 +1,8 @@
 <script lang="ts">
+	import '@unocss/reset/tailwind.css';
 	import '../app.css';
+	import 'uno.css';
 	import JsonIcon from '../components/icons/JsonIcon.svelte';
-	import Card from '../components/ui/Card.svelte';
 
 	interface NavItem {
 		name: string;
@@ -35,7 +36,7 @@
 			{/each}
 		</nav>
 		<div class="grow p-5">
-			<div class="p-5 rounded-lg bg-white w-full h-full">
+			<div class="rounded-lg bg-white w-full h-full">
 				<slot />
 			</div>
 		</div>
