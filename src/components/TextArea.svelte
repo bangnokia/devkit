@@ -25,7 +25,7 @@
 		/>
 
 		{#if canCopy}
-            <CopyButton />
+            <CopyButton text={value} />
 		{/if}
 	</div>
 </div>

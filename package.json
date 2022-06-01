@@ -36,6 +36,7 @@
   "type": "module",
   "dependencies": {
     "@iconify-json/tabler": "^1.1.13",
-    "clipboard": "^2.0.11"
+    "clipboard": "^2.0.11",
+    "svelte-copy-to-clipboard": "^0.2.5"
   }
 }
