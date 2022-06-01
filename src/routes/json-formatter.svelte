@@ -25,6 +25,6 @@
 				</div>
 			</TextArea>
 		</div>
-		<TextArea label="Output" class="grow" bind:value={output} />
+		<TextArea label="Output" class="grow" bind:value={output} canCopy />
 	</div>
 </Card>
