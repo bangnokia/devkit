@@ -12,7 +12,7 @@
 	let className = '';
 	export { className as class };
 
-	let editorElement;
+	let editorElement: HTMLElement;
 	let editor: EditorView;
 	let state: EditorState;
 
