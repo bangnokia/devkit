@@ -26,6 +26,6 @@
 				</div>
 			</TextArea>
 		</div>
-        <Editor label="Output" bind:value={output}/>
+        <Editor label="Output" bind:value={output} canCopy/>
 	</div>
 </Card>

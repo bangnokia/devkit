@@ -17,21 +17,23 @@
     let state: EditorState;
 
     $: if (editor) {
-        // how can we update
         editor.dispatch({
             changes: {from: 0, to: editor.state.doc.length, insert: value}
         })
     }
 
     onMount(() => {
-       setupEditor()
+        setupEditor()
+        console.log(editorElement.offsetHeight)
     })
 
     function setupEditor() {
         const customTheme = EditorView.theme({
-            '&': {fontFamily: "Roboto Mono"},
-            ".cm-editor .cm-content": {fontFamily: "Roboto Mono", fontSize: "1rem"},
-            ".cm-scroller": {overflow: "auto"}
+            '&': {fontFamily: "'Roboto Mono'", height: '100%', overflow: 'hidden'},
+            ".cm-editor .cm-content": {fontFamily: "'Roboto Mono'"},
+            ".cm-scroller": {fontFamily: "'Roboto Mono'"},
+            ".cm-gutters": {background: 'transparent', borderRight: 'none',},
+            ".cm-gutter.cm-lineNumbers": {minWidth: '35px', fontSize: '14px'}
         })
         state = EditorState.create({
             doc: value,
@@ -57,7 +59,7 @@
             <slot name="toolbar"/>
         </div>
     </div>
-    <div class="relative flex-grow">
+    <div class="relative flex-grow overflow-hidden h-[300px] max-h-max">
         <div
                 {id}
                 bind:this={editorElement}
