@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Button from '../components/Button.svelte';
-	import Textarea from '../components/Textarea.svelte';
+	import TextArea from '../components/TextArea.svelte';
 	import Card from '../components/ui/Card.svelte';
 	import Editor from '../components/Editor.svelte';
 	import { onMount } from 'svelte';
@@ -27,11 +27,11 @@
 <Card name="Json formatter">
 	<div class="grid grid-cols-2 gap-5 h-full pb-5">
 		<div class="grow flex-1 flex">
-			<Textarea label="Input" class="grow" bind:value={input} bind:this={inputElement}>
+			<TextArea label="Input" class="grow" bind:value={input} bind:this={inputElement}>
 				<div slot="toolbar">
 					<Button on:click={format}>Format</Button>
 				</div>
-			</Textarea>
+			</TextArea>
 		</div>
 		<Editor label="Output" bind:value={output} canCopy />
 	</div>
