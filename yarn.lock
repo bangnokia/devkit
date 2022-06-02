@@ -36,6 +36,103 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@codemirror/autocomplete@^0.20.0":
+  version "0.20.3"
+  resolved "https://registry.yarnpkg.com/@codemirror/autocomplete/-/autocomplete-0.20.3.tgz#affe2d7e2b2e0be42ee1ac5fb74a1c84a6f1bfd7"
+  integrity sha512-lYB+NPGP+LEzAudkWhLfMxhTrxtLILGl938w+RcFrGdrIc54A+UgmCoz+McE3IYRFp4xyQcL4uFJwo+93YdgHw==
+  dependencies:
+    "@codemirror/language" "^0.20.0"
+    "@codemirror/state" "^0.20.0"
+    "@codemirror/view" "^0.20.0"
+    "@lezer/common" "^0.16.0"
+
+"@codemirror/basic-setup@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@codemirror/basic-setup/-/basic-setup-0.20.0.tgz#ed331e0b2d29efc0a09317de9e10467b992b0c7b"
+  integrity sha512-W/ERKMLErWkrVLyP5I8Yh8PXl4r+WFNkdYVSzkXYPQv2RMPSkWpr2BgggiSJ8AHF/q3GuApncDD8I4BZz65fyg==
+  dependencies:
+    "@codemirror/autocomplete" "^0.20.0"
+    "@codemirror/commands" "^0.20.0"
+    "@codemirror/language" "^0.20.0"
+    "@codemirror/lint" "^0.20.0"
+    "@codemirror/search" "^0.20.0"
+    "@codemirror/state" "^0.20.0"
+    "@codemirror/view" "^0.20.0"
+
+"@codemirror/commands@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@codemirror/commands/-/commands-0.20.0.tgz#51405d442e6b8687b63e8fa27effc28179917c88"
+  integrity sha512-v9L5NNVA+A9R6zaFvaTbxs30kc69F6BkOoiEbeFw4m4I0exmDEKBILN6mK+GksJtvTzGBxvhAPlVFTdQW8GB7Q==
+  dependencies:
+    "@codemirror/language" "^0.20.0"
+    "@codemirror/state" "^0.20.0"
+    "@codemirror/view" "^0.20.0"
+    "@lezer/common" "^0.16.0"
+
+"@codemirror/lang-javascript@^0.20.1":
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@codemirror/lang-javascript/-/lang-javascript-0.20.1.tgz#8590f484947229a43d7dacb0fbf474b557037a44"
+  integrity sha512-eYulxirefgyow5rBf6I1aGXsF125lPmUIoL3JQaPgCVONimb90zsAG6I2m8ObMn9Z0kCTCdrGEhzCSwZkQiXBQ==
+  dependencies:
+    "@codemirror/autocomplete" "^0.20.0"
+    "@codemirror/language" "^0.20.0"
+    "@codemirror/lint" "^0.20.0"
+    "@codemirror/state" "^0.20.0"
+    "@codemirror/view" "^0.20.0"
+    "@lezer/common" "^0.16.1"
+    "@lezer/javascript" "^0.16.0"
+
+"@codemirror/lang-json@codemirror/lang-json":
+  version "0.20.0"
+  resolved "https://codeload.github.com/codemirror/lang-json/tar.gz/b487db92a09e21c341fe58f6d0ca5632bfa109d0"
+  dependencies:
+    "@codemirror/language" "^0.20.0"
+    "@lezer/json" "^0.16.0"
+
+"@codemirror/language@^0.20.0", "@codemirror/language@^0.20.2":
+  version "0.20.2"
+  resolved "https://registry.yarnpkg.com/@codemirror/language/-/language-0.20.2.tgz#31c3712eac2251810986272dcd6a50510e0c1529"
+  integrity sha512-WB3Bnuusw0xhVvhBocieYKwJm04SOk5bPoOEYksVHKHcGHFOaYaw+eZVxR4gIqMMcGzOIUil0FsCmFk8yrhHpw==
+  dependencies:
+    "@codemirror/state" "^0.20.0"
+    "@codemirror/view" "^0.20.0"
+    "@lezer/common" "^0.16.0"
+    "@lezer/highlight" "^0.16.0"
+    "@lezer/lr" "^0.16.0"
+    style-mod "^4.0.0"
+
+"@codemirror/lint@^0.20.0":
+  version "0.20.3"
+  resolved "https://registry.yarnpkg.com/@codemirror/lint/-/lint-0.20.3.tgz#34c0fd45c5acd522637f68602e3a416162e03a15"
+  integrity sha512-06xUScbbspZ8mKoODQCEx6hz1bjaq9m8W8DxdycWARMiiX1wMtfCh/MoHpaL7ws/KUMwlsFFfp2qhm32oaCvVA==
+  dependencies:
+    "@codemirror/state" "^0.20.0"
+    "@codemirror/view" "^0.20.2"
+    crelt "^1.0.5"
+
+"@codemirror/search@^0.20.0":
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@codemirror/search/-/search-0.20.1.tgz#9eba0514218a673e29501a889a4fcb7da7ce24ad"
+  integrity sha512-ROe6gRboQU5E4z6GAkNa2kxhXqsGNbeLEisbvzbOeB7nuDYXUZ70vGIgmqPu0tB+1M3F9yWk6W8k2vrFpJaD4Q==
+  dependencies:
+    "@codemirror/state" "^0.20.0"
+    "@codemirror/view" "^0.20.0"
+    crelt "^1.0.5"
+
+"@codemirror/state@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@codemirror/state/-/state-0.20.0.tgz#3343d209169813b0152b77361cd78bea01549a73"
+  integrity sha512-R3XrAWCS5Xm9lx+4pDET4EUPEg+8bDfAa5zoOFIhx+VChsfew9Vy33dAjCXS5ES4Q8UecW4WM4UudmUFpZ+86A==
+
+"@codemirror/view@^0.20.0", "@codemirror/view@^0.20.2":
+  version "0.20.7"
+  resolved "https://registry.yarnpkg.com/@codemirror/view/-/view-0.20.7.tgz#1d0acc740f71f92abef4b437c030d4e6c39ab6dc"
+  integrity sha512-pqEPCb9QFTOtHgAH5XU/oVy9UR/Anj6r+tG5CRmkNVcqSKEPmBU05WtN/jxJCFZBXf6HumzWC9ydE4qstO3TxQ==
+  dependencies:
+    "@codemirror/state" "^0.20.0"
+    style-mod "^4.0.0"
+    w3c-keyname "^2.2.4"
+
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-0.4.3.tgz"
@@ -93,6 +190,41 @@
     debug "^4.3.4"
     kolorist "^1.5.1"
     local-pkg "^0.4.1"
+
+"@lezer/common@^0.16.0", "@lezer/common@^0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@lezer/common/-/common-0.16.1.tgz#3b98b42fdb11454b89e8a340da10bee1b0f94071"
+  integrity sha512-qPmG7YTZ6lATyTOAWf8vXE+iRrt1NJd4cm2nJHK+v7X9TsOF6+HtuU/ctaZy2RCrluxDb89hI6KWQ5LfQGQWuA==
+
+"@lezer/highlight@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@lezer/highlight/-/highlight-0.16.0.tgz#95f7b7ee3c32c8a0f6ce499c085e8b1f927ffbdc"
+  integrity sha512-iE5f4flHlJ1g1clOStvXNLbORJoiW4Kytso6ubfYzHnaNo/eo5SKhxs4wv/rtvwZQeZrK3we8S9SyA7OGOoRKQ==
+  dependencies:
+    "@lezer/common" "^0.16.0"
+
+"@lezer/javascript@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@lezer/javascript/-/javascript-0.16.0.tgz#712c3bc098bfc91b381a386551a86e9d4baf95eb"
+  integrity sha512-kDcwX3QMFKVd7VJwlYTeTNtcj3/gXQEDa7cQzXXsFMvTGV/RTDq0r8agTpZu0zBc1RUZkVILusd1Cluz3STRqw==
+  dependencies:
+    "@lezer/highlight" "^0.16.0"
+    "@lezer/lr" "^0.16.0"
+
+"@lezer/json@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@lezer/json/-/json-0.16.0.tgz#f841fd7557fac8eac14c4dd52cb0e36abd9e8164"
+  integrity sha512-Aqsi+qclD1f27tKGV9nND29WRXur8kfVnbPf5gUms3SNTY5mRIADnXy9/5dQxKlPkVHSuS1RCUJvA0+mdNQtsQ==
+  dependencies:
+    "@lezer/highlight" "^0.16.0"
+    "@lezer/lr" "^0.16.0"
+
+"@lezer/lr@^0.16.0":
+  version "0.16.3"
+  resolved "https://registry.yarnpkg.com/@lezer/lr/-/lr-0.16.3.tgz#1e4cc581d2725c498e6a731fc83c379114ba3a70"
+  integrity sha512-pau7um4eAw94BEuuShUIeQDTf3k4Wt6oIUOYxMmkZgDHdqtIcxWND4LRxi8nI9KuT4I1bXQv67BCapkxt7Ywqw==
+  dependencies:
+    "@lezer/common" "^0.16.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -633,6 +765,11 @@ clipboard@^2.0.11:
     select "^1.1.2"
     tiny-emitter "^2.0.0"
 
+codemirror@^5.65.5:
+  version "5.65.5"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.65.5.tgz#f38f0e29945c3464df0c81f946fcd9a063fa2024"
+  integrity sha512-HNyhvGLnYz5c+kIsB9QKVitiZUevha3ovbIYaQiGzKo7ECSL/elWD9RXt3JgNr0NdnyqE9/Rc/7uLfkJQL638w==
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz"
@@ -671,6 +808,11 @@ consola@^2.15.3:
   version "2.15.3"
   resolved "https://registry.yarnpkg.com/consola/-/consola-2.15.3.tgz#2e11f98d6a4be71ff72e0bdf07bd23e12cb61550"
   integrity sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==
+
+crelt@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/crelt/-/crelt-1.0.5.tgz#57c0d52af8c859e354bace1883eb2e1eb182bb94"
+  integrity sha512-+BO9wPPi+DWTDcNYhr/W90myha8ptzftZT+LwcmUbbok0rcP/fequmFYCw8NMoH7pkAZQzU78b3kYrlua5a9eA==
 
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
@@ -1961,6 +2103,11 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
+style-mod@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/style-mod/-/style-mod-4.0.0.tgz#97e7c2d68b592975f2ca7a63d0dd6fcacfe35a01"
+  integrity sha512-OPhtyEjyyN9x3nhPsu76f52yUGXiZcgvsrFVtvTkyGRQJ0XK+GPc6ov1z+lRpbeabka+MYEQxOYRnt5nF30aMw==
+
 supports-color@^5.3.0:
   version "5.5.0"
   resolved "https://registry.npmjs.org/supports-color/-/supports-color-5.5.0.tgz"
@@ -2063,6 +2210,14 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+thememirror@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/thememirror/-/thememirror-1.0.0.tgz#5bbad2c1088caf0cadc95c69a0b253a8925109f1"
+  integrity sha512-1cd/Z/K4Zj/HoBxtsqZHbsYRGHd+An3dmuZNlq2fSU5qFQ96K5iwG1/cfR5MwyG5cQEcEDPB2WfhnQ2D+a3TUg==
+  dependencies:
+    "@codemirror/language" "^0.20.2"
+    "@lezer/highlight" "^0.16.0"
 
 tiny-emitter@^2.0.0:
   version "2.1.0"
@@ -2190,6 +2345,11 @@ vite@^2.9.0:
     rollup "^2.59.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+w3c-keyname@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/w3c-keyname/-/w3c-keyname-2.2.4.tgz#4ade6916f6290224cdbd1db8ac49eab03d0eef6b"
+  integrity sha512-tOhfEwEzFLJzf6d1ZPkYfGj+FWhIpBux9ppoP3rlclw3Z0BZv3N7b7030Z1kYth+6rDuAsXUFr+d0VE6Ed1ikw==
 
 which@^2.0.1:
   version "2.0.2"

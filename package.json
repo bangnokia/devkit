@@ -35,8 +35,13 @@
   },
   "type": "module",
   "dependencies": {
+    "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/lang-javascript": "^0.20.1",
+    "@codemirror/lang-json": "codemirror/lang-json",
     "@iconify-json/tabler": "^1.1.13",
     "clipboard": "^2.0.11",
-    "svelte-copy-to-clipboard": "^0.2.5"
+    "codemirror": "^5.65.5",
+    "svelte-copy-to-clipboard": "^0.2.5",
+    "thememirror": "^1.0.0"
   }
 }

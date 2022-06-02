@@ -35,7 +35,7 @@
 				</a>
 			{/each}
 		</nav>
-		<div class="grow p-5">
+		<div class="flex-1 p-5">
 			<div class="rounded-lg bg-white w-full h-full">
 				<slot />
 			</div>
