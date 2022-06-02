@@ -59,7 +59,7 @@
             <slot name="toolbar"/>
         </div>
     </div>
-    <div class="relative flex-grow overflow-hidden h-[300px] max-h-max">
+    <div class="relative flex-grow overflow-hidden max-h-max" style="height: 300px">
         <div
                 {id}
                 bind:this={editorElement}
