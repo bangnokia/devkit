@@ -1,4 +1,4 @@
-# Devkits app
+# Devkits.app
 
 ## Introduction
 
@@ -11,3 +11,5 @@ This project using `yarn`, so please dont use `npm`
 ```
 yarn dev
 ```
+
+## This project deployed on Cloudflare under domain https://devkits.app
