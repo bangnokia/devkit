@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Button from '../components/Button.svelte';
 	import Textarea from '../components/Textarea.svelte';
-    import Card from '../components/ui/Card.svelte';
-    import Editor from '../components/Editor.svelte';
+	import Card from '../components/ui/Card.svelte';
+	import Editor from '../components/Editor.svelte';
 	import { onMount } from 'svelte';
 
 	let input = '';
